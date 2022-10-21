@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <main class="container">
+        <h2>Register</h2>
+
+        <!-- here we will add the input fields-->
+        <div class="mb-3">
+            <label class="form-label">Name:</label>
+            <input class="form-control" type="text"
+            placeholder="Enter pets name" id="txtName">
+            
+        </div>
+        
+        <div class="mb-3">
+            <label>Age:</label>
+            <input class="form-control" type="textAge"
+            id="txtAge">
+        </div> 
+
+        <div class="mb-3">
+            <label>Gender:</label>
+            <input class="form-control" type="text"
+            id="txtGender">
+        </div> 
+
+        <div class="mb-3">
+            <label>Breed</label>
+            <input class="form-control" type="text" id="txtBreed">
+        </div>
+
+        <div class="mb-3">
+            <label>OwnerName</label>
+            <input class="form-control" type="text" id="txtOwnerName">
+        </div>
+
+        <div class="mb-3">
+            <label>Phone</label>
+            <input class="form-control" type="text" id="txtPhone">
+        </div>
+
+        <div class="mb-3">
+            <label> service:</label>
+            <select class="form-select" id="selService">
+                <option value="" disabled selected> --- Select an option ---</option>
+                <option value="grooming">grooming🛁</option>
+                <option value="Vaccine">Vaccine💉</option>
+                <option value="Nails">Nails💅</option>
+            </select>
+        </div>
+
+
+        <button class="btn btn-dark" onclick="register();">Register</button>
+
+        
+        <div id="pets">
+            <!-- pet cards-->
+        </div>
+        <!--table tables-->
+        <table>
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Breed</th>
+                    <th scope="col">Service</th>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="petsTable">
+            </tbody>
+
+
+
+        </table>
+    
+
+    </main>
+
+    <div  class="popup">
+        <h1>alert</h1>
+        <p id="numberOfPets">
+             
+        </p>
+        <button onclick="displayNumberofPets()">display pets</button>
+    </div>
+
+    <script src="display.js"></script>
+    <script src="register.js"></script>
+    
+
+
+    
+
+</body>
+</html>
